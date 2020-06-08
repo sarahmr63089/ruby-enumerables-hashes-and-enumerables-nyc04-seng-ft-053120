@@ -10,7 +10,7 @@ require "pry"
 def select_winner(passengers)
   winner = ""
   passengers.each {|suite, passenger|
-    if suite == :suite_a && passenger[0] == "a" || "A"
+    if suite == :suite_a && passenger[0] == "A"
       passenger = winner
     end
     }
