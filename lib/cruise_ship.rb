@@ -14,5 +14,4 @@ def select_winner(passengers)
     end
     }
   binding.pry
-  winner
 end
