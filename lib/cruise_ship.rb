@@ -8,9 +8,11 @@ require "pry"
 # }
 
 def select_winner(passengers)
+  winner = ""
   passengers.each {|suite, passenger|
     if suite == :suite_a && passenger[0] == "a" || "A"
-      return passenger
+      passenger = winner
     end
     }
+  winner
 end
