@@ -8,11 +8,19 @@ require "pry"
 # }
 
 def select_winner(passengers)
-  winner = ""
-  passengers.each do |suite, passenger|
-    if suite == :suite_a && passenger.start_with?("A")
-      passenger = winner
-    end
+#  winner = ""
+  #passengers.each do |suite, passenger|
+    #if suite == :suite_a && passenger.start_with?("A")
+      #passenger = winner
+    #end
+  #end
+  #winner
+#end
+
+winner = ""
+passengers.each do |suite, name|
+  if suite == :suite_a && name.start_with?("A")
+    winner = name
   end
-  winner
+end
 end
