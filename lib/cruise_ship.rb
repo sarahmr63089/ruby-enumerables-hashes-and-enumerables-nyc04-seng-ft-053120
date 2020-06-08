@@ -8,6 +8,7 @@
 
 def select_winner(passengers)
   passengers.each {|suite, passenger|
+    winner = ""
     if suite == :suite_a && passenger[0] == "a" || "A"
       passenger = winner
     end
