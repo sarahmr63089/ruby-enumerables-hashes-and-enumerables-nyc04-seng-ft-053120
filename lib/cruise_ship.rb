@@ -10,7 +10,7 @@ require "pry"
 def select_winner(passengers)
   winner = ""
   passengers.each do |suite, passenger|
-    if suite == :suite_a && passenger[0] == "A" || "a"
+    if suite == :suite_a && passenger.start_with?("A")
       winner = passenger
     end
   end
